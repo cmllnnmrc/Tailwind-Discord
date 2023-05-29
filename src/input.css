@@ -244,6 +244,10 @@
         @apply bg-primary flex items-center text-[1.3rem] p-[1rem] justify-center text-light py-[.5rem] w-[100%] rounded-full lg:w-fit
     }
 
+    .dl-banner__btn a:hover{
+        @apply bg-[hsl(235,86.1%,71.8%)] shadow-[0_8px_15px_rgba(0,0,0,.2)]
+    }
+
     .dl-banner__btn img{
         @apply mr-[.5rem]
     }
@@ -252,6 +256,10 @@
 
     .footer{
         @apply bg-dark py-[2rem]
+    }
+
+    .footer__wrapper{
+        @apply lg:grid lg:grid-cols-[1.5fr_3fr] lg:justify-between
     }
 
     .footer__flags a{
@@ -282,12 +290,16 @@
         @apply text-light text-[1.5rem]
     }
 
+    .footer__content{
+        @apply lg:grid lg:grid-cols-4
+    }
+
     .footer__item{
-        @apply text-light mb-[1.5rem]
+        @apply text-light mb-[1.5rem] lg:ml-[2rem]
     }
 
     .footer__item h4{
-        @apply flex justify-between text-primary text-[1rem] cursor-pointer
+        @apply flex justify-between text-primary text-[1rem] cursor-pointer lg:mb-[1rem]
     }
 
     .footer__item i{
@@ -299,11 +311,11 @@
     }
 
     .footer__item ul{
-        @apply max-h-0 overflow-hidden
+        @apply max-h-0 overflow-hidden transition ease-linear duration-300 lg:max-h-[100%]
     }
 
     .footer__item ul.open{
-        @apply max-h-[50rem] p-[1rem] transition ease-linear bg-dark shadow-[0_8px_15px_rgba(0,0,0,.2)]
+        @apply max-h-[50rem] p-[1rem] transition ease-linear duration-300 bg-dark shadow-[0_8px_15px_rgba(0,0,0,.2)]
     }
 
     .footer__item ul li{
@@ -319,7 +331,7 @@
     }
 
     .footer__btn ul{
-        @apply flex items-center justify-between py-[2rem]
+        @apply flex items-center justify-between pt-[2.5rem]
     }
 
     .footer__btn ul li a{
@@ -327,6 +339,6 @@
     }
 
     .footer__btn ul li:last-child a{
-        @apply bg-primary text-[.8rem] font-[600] py-[.5rem] px-[1rem] rounded-full
+        @apply bg-[hsl(235,86.1%,71.8%)] text-[.8rem] font-[600] py-[.5rem] px-[1rem] rounded-full
     }
 }
