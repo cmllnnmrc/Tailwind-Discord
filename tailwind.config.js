@@ -13,12 +13,13 @@ module.exports = {
       screens: {
         'sm': '500px',
         'md': '768px',
-        'lg': '1080px',
+        'lg': '1024px',
         'xl': '1920'
       },
 
       backgroundImage: {
         'hmBG': 'url("./dc-img/hm-bg.svg")',
+        'sparkle': 'url("./dc-img/sparkles.svg")',
       },
     },
   },
