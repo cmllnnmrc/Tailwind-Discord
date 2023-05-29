@@ -15,6 +15,14 @@
         @apply relative bg-hmBG;
     }
 
+    .blur{
+        @apply h-[100vh] w-[36%] bg-[rgb(0,0,0,.3)] absolute top-0 z-[1] right-[100rem] transition ease-in-out lg:hidden
+    }
+
+    .blur.open{
+        @apply left-0 transition ease-in-out
+    }
+
     .header__wrapper{
         @apply flex items-center justify-between;
     }
@@ -315,7 +323,7 @@
     }
 
     .footer__item ul.open{
-        @apply max-h-[50rem] p-[1rem] transition ease-linear duration-300 bg-dark shadow-[0_8px_15px_rgba(0,0,0,.2)]
+        @apply max-h-[50rem] p-[1rem] transition ease-linear duration-300
     }
 
     .footer__item ul li{
